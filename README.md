@@ -1,11 +1,9 @@
 # Orchestral Texture Classification (APSIPA ASC 2025)
----
 Official implementation for the paper: 
 **"A Comparative Study of Statistical Features and Deep Learning for Orchestral Texture Classification"**
 Authors: Zih-Syuan Lin, Jun-You Wang, and Li Su
 
 ## Overview
----
 This repository contains the source code, preprocessing scripts, and model implementations used in our study on symbolic orchestral texture classification.
 The task assigns textural role labels (e.g., Melody / Rhythm / Harmony) to each *track-bar unit* (each bar for each instrument/track) in symphonies.
 
@@ -14,10 +12,10 @@ We provide:
 * Multiple modeling approaches: rule-based, deep learning, pre-trained models, and feature-based hybrid systems
 * Cross-dataset benchmark between the Orchestration dataset ([Le et al., 2022](https://gitlab.com/algomus.fr/orchestration)) and the S3 ([Lin et al., 2024](https://github.com/iis-mctl/mctl-symphony-dataset)) dataset.
 
-*NOTE: "Piece" in this page all refer to a movement of a symphony (rather than the WHOLE symphony).*
+*Note: "Piece" throughout this repository refers to a movement of a symphony rather than the entire work.*
+*Note: Some code segments are presented as pseudo-code, as several implementations are adapted from previous studies.*
 
 ## Repository Structure
----
 ```
 orchestral-texture-classification/
 │
@@ -50,7 +48,6 @@ orchestral-texture-classification/
 ```
 
 ## Data Preprocessing
----
 ### 1. Piano Roll Representation
 * Based on [Chu & Li (2023)](https://github.com/YaHsuanChu/orchestraTextureClassification)
 * Converts MusicXML or MIDI files into piano roll arrays of shape `(tracks, time_steps, pitch_dim)`
@@ -68,7 +65,6 @@ orchestral-texture-classification/
   * Polyphony, onset synchrony, syncopation, occupation rates
   * Instrument encoding (one-hot / normalized scalar)
 
----
 
 ## Models
 
@@ -103,7 +99,6 @@ orchestral-texture-classification/
 
 
 ## Evaluation
----
 * Metrics: Accuracy, weighted macro Precision / Recall / F1
 * Protocols:
   * Fixed test set (on Orchestration dataset)
@@ -113,7 +108,6 @@ orchestral-texture-classification/
 
 
 ## Citation
----
 If you use this code or dataset, please cite:
 
 ```
@@ -127,7 +121,6 @@ If you use this code or dataset, please cite:
 ```
 
 ## Author & Contact
----
 **Zih-Syuan Lin** (McGill University / Academia Sinica)
 - E-amil: [zih-syuan.lin@mail.mcgill.ca](mailto:zih-syuan.lin@mail.mcgill.ca), [clarelyn@iis.sinica.edu.tw](mailto:clarelyn@iis.sinica.edu.tw)
-[https://github.com/zih-syuan](https://github.com/zih-syuan)
+- GitHub: [https://github.com/zih-syuan](https://github.com/zih-syuan)
