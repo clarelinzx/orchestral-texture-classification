@@ -1,5 +1,5 @@
 # Orchestral Texture Classification
-Official implementation for the paper: **"A Comparative Study of Statistical Features and Deep Learning for Orchestral Texture Classification"**, presented in APSIPA ASC 2025. 
+Official implementation for the paper: [*A Comparative Study of Statistical Features and Deep Learning for Orchestral Texture Classification*](https://drive.google.com/file/d/1dU5iiPPTHSYmWv18DIAMukWLtroJHhLm/view?usp=sharing) ([poster](https://drive.google.com/file/d/1xVbw_CZJWL6oSEg1XznqTPYGQOQW8cIZ/view?usp=sharing)), presented in APSIPA ASC 2025. 
 
 ## Overview
 This repository contains the source code, preprocessing scripts, and model implementations used in our study on symbolic orchestral texture classification.
