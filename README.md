@@ -105,8 +105,6 @@ orchestral-texture-classification/
 
 
 ## Citation
-If you use this code or dataset, please cite:
-
 ```
 @inproceedings{lin2025texture,
   title={A Comparative Study of Statistical Features and Deep Learning for Orchestral Texture Classification},
