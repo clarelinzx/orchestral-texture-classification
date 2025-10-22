@@ -10,10 +10,10 @@ The task assigns textural role labels (e.g., Melody / Rhythm / Harmony) to each 
 We provide:
 * Data preprocessing: piano roll, sequential, and statistical feature extraction
 * Multiple modeling approaches: rule-based, deep learning, pre-trained models, and feature-based hybrid systems
-* Cross-dataset benchmark between the Orchestration dataset ([Le et al., 2022](https://gitlab.com/algomus.fr/orchestration)) and the S3 ([Lin et al., 2024](https://github.com/iis-mctl/mctl-symphony-dataset)) dataset.
+* Cross-dataset benchmark between the Orchestration dataset ([Le et al., 2022](https://gitlab.com/algomus.fr/orchestration)) and the S3 dataset ([Lin et al., 2024](https://github.com/iis-mctl/mctl-symphony-dataset)).
 
-*Note: "Piece" throughout this repository refers to a movement of a symphony rather than the entire work.*
-*Note: Some code segments are presented as pseudo-code, as several implementations are adapted from previous studies.*
+*Note 1: "Piece" throughout this repository refers to a movement of a symphony rather than the entire work.*
+*Note 2: Some code are presented as pseudo-code, as several implementations are adapted from previous studies.*
 
 ## Repository Structure
 ```
