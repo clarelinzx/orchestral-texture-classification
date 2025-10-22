@@ -1,7 +1,5 @@
-# Orchestral Texture Classification (APSIPA ASC 2025)
-Official implementation for the paper: 
-**"A Comparative Study of Statistical Features and Deep Learning for Orchestral Texture Classification"**
-Authors: Zih-Syuan Lin, Jun-You Wang, and Li Su
+# Orchestral Texture Classification
+Official implementation for the paper: **"A Comparative Study of Statistical Features and Deep Learning for Orchestral Texture Classification"**, presented in APSIPA ASC 2025. 
 
 ## Overview
 This repository contains the source code, preprocessing scripts, and model implementations used in our study on symbolic orchestral texture classification.
@@ -65,15 +63,9 @@ orchestral-texture-classification/
 
 ### 3. Statistical Feature Extraction
 * Adapted from [L. Soum-Fontez et al. (2021)](https://hal.science/hal-03322543)
-
-* Extracts handcrafted features per track-bar and all-bar units:
-  * Duration, pitch, interval statistics (mean, std, min, max, normalized)
-  * Polyphony, onset synchrony, syncopation, occupation rates
-  * Instrument encoding (one-hot / normalized scalar)
-
+* Extracts handcrafted features per track-bar and all-bar units.
 
 ## Models
-
 ### 1. Rule-Based (Skyline Method)
 * Heuristic baseline assuming melody = highest pitch line within a bar
 * Adapted from Soum-Fontez et al., 2021.
@@ -91,14 +83,13 @@ orchestral-texture-classification/
 
 | Model          | Base                | Description                                      |
 | :------------- | :------------------ | :----------------------------------------------- |
-| **MidiBERT-f** | Chou et al., 2024 | frozen pre-trained model, linear classifier only |
-| **MidiBERT-n** | Chou et al., 2024 | fully fine-tuned                                 |
-| **M2BERT**     | Wang & Su, 2025   | fine-tuned with pianoroll prediction objective   |
+| **MidiBERT-f** | [Chou et al., 2024](https://github.com/wazenmai/MIDI-BERT)| frozen pre-trained model, linear classifier only |
+| **MidiBERT-n** | [Chou et al., 2024](https://github.com/wazenmai/MIDI-BERT) | fully fine-tuned                                 |
+| **M2BERT**     | [Wang & Su, 2025](https://github.com/york135/M2BERT)   | fine-tuned with pianoroll prediction objective   |
 
 *(Only partially included here; please refer to the original repositories for full implementation details.)*
 
 ### 4. Random Forest (RF) and Hybrid
-
 * RF trained on statistical + instrument features
 * CNN+RF: concatenates CNN embeddings with statistical features
 * Based on Soum-Fontez et al., 2021 and extended to orchestral datasets
